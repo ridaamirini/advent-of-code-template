@@ -63,7 +63,7 @@ func (i *Input) Floats() []float64 {
 	result := make([]float64, 0)
 
 	for _, l := range i.data {
-		value, err := strconv.ParseFloat(l,64)
+		value, err := strconv.ParseFloat(l, 64)
 		if err != nil {
 			panic(err)
 		}
